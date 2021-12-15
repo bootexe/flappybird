@@ -1,0 +1,13 @@
+.bird{
+    height :100px;
+    width:100px;
+    background:yellow;
+    position: absolute;
+    transition: all 0.1s ease;
+}
+
+.tuyau{
+    position: absolute;
+    background:green;
+    transition: all 0.1s ease;
+}
