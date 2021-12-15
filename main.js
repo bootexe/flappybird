@@ -96,11 +96,10 @@ $('.game').prop('disabled',true);   //<input type=text class="" style=background
 
 
 
-document.querySelectorAll('.game')    /*HTML*/    != $('.game')    /*Jquery*/
-document.querySelectorAll('.game')    /*HTML*/    == $('.game')[0] /*HTML*/ 
-$(document.querySelectorAll('.game')) /*Jquery*/  == $('.game')    /*Jquery*/
-$(document.querySelectorAll('.game')) = $($('.game')[0]) = $('.game')
-
+//document.querySelectorAll('.game')    /*HTML*/    //!= $('.game')    /*Jquery*/
+//document.querySelectorAll('.game')    /*HTML*/    == $('.game')[0] /*HTML*/ 
+//$(document.querySelectorAll('.game')) /*Jquery*/  == $('.game')    /*Jquery*/
+//$(document.querySelectorAll('.game')) = $($('.game')[0]) = $('.game')
 
 $('.game').find('*');
 $('.game').parent('body');
@@ -194,7 +193,7 @@ let tuyaux= [
         x:1,
         id:1
     }
-]
+];
 
 let jumpy = 7;
 
@@ -220,7 +219,7 @@ function gravity(){
 }
 
 function jump(){
-    jumpy=7;
+    jumpy = 7;
 }
 
 function collision(collisionMgr = function(){}){

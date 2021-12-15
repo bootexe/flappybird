@@ -1,27 +1,44 @@
-html,body{
+html,body,.game{
     padding : 0;
     margin : 0;
     border: none;
-    width:100%;
-    height:100%;
+    width:590px;
+    height:820px;
     position: fixed;
     top:0;
     left:0;
     overflow: hidden;
-    background:lightblue;
+    background:lightblue !important;
+}
+
+*:not(input){
+    user-select: none;
+    -webkit-user-select:none;
+}
+
+html{
+    background: black;
 }
 
 .bird{
-    height :100px;
-    width:100px;
+    height :50px;
+    width:50px;
     background:yellow;
     position: absolute;
     transition: all 0.1s ease;
 }
+.button{
+    height:100px;
+    width:100px;
+    position: absolute;
+    left:calc(50% - 50px);
+    bottom:0;
+    background: red;
+}
 
 .tuyau{
     position: absolute;
-    top:calc(50% - 1000px);
+    top:calc(50% - 900px);
     margin:0px;
     background:blue;
     transition: all 0.1s ease;
@@ -47,4 +64,12 @@ html,body{
     width:50px;
     position: relative;
     bottom:100px;
+}
+
+h1.score{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:20px;
+
 }
