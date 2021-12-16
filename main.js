@@ -104,7 +104,26 @@ $('.game').prop('disabled',true);   //<input type=text class="" style=background
 $('.game').find('*');
 $('.game').parent('body');
 $('.game').parents('body');
-$('*:has( + .tuyau)')
+$('*:has( + .tuyau)');
+
+$('.button').on('click',function(e){
+    $(e.currentTarget).attr('operator');  //return "+";
+})
+
+
+switch(e){
+    case "+":
+        //some function
+        //a+b
+    break;
+    case "-":
+        //some function
+        //a-b
+    break;
+    default:
+        //console.err('pas reconnu');
+    break;
+}
 
 
 
